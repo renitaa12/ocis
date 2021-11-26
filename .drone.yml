@@ -1,10 +1,9 @@
 kind: pipeline
 type: docker
-platform:
-  os: linux
-  arch: amd64
+name: default-1
+
 steps:
-- name: Unit testing
-  image: maven:3-jdk-11
+- name: test-1
+  image: golang
   commands:
   - lscpu
